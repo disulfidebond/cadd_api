@@ -1,5 +1,5 @@
 ## Overview
-The [Combined Annotation Dependent Depletion (CADD)](), is a useful tool for querying SNPs of interest. The following is an implementation of their API to perform batch queries.  The code is stored in this repoisitory as a jupyter notebook, which can be run by itself, or reused as part of a larger program. 
+The [Combined Annotation Dependent Depletion (CADD)](), is a useful tool for querying SNPs of interest. The following is an implementation of their API to perform batch queries.  The code is stored in this repoisitory as a jupyter notebook, which can be run by itself, or reused as part of a larger program. An example file 'debugCADD.txt' has also been attached, and when used within the notebook, will return 2 entries, and error out for the third.
 
 There are several important caveats to keep in mind:
 * The [API](https://cadd.gs.washington.edu/api) is, by definition, experimental, and `not thought to be used for retrieving thousands or millions of variants`. Do **NOT** remove the lines of code that provide a pause, and do NOT use this for more than 1000 queries at a time. Doing so will result in the server crashing, and some very irate researchers at the University of Washington.
